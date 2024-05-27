@@ -1,26 +1,27 @@
 <div id="footer">
 	<div>
 		<ul class="navigation">
-			<li>
-				<a href="index.html">Home</a>
+			<!-- Adds "active" class if currentRoute is 'home' to highlight the Home navigation item -->
+			<li class="{{#if (eq currentRoute 'home')}}active{{/if}}">
+				<a href="/">Home</a>
 			</li>
-			<li class="active"></li>
+			<li class="{{#if (eq currentRoute 'travel')}}active{{/if}}">
 				<a href="/travel">Travel</a>
 			</li>
-			<li>
-				<a href="rooms.html">Rooms</a>
+			<li class="{{#if (eq currentRoute 'rooms')}}active{{/if}}">
+				<a href="/rooms">Rooms</a>
 			</li>
-			<li>
-				<a href="meals.html">Meals</a>
+			<li class="{{#if (eq currentRoute 'meals')}}active{{/if}}">
+				<a href="/meals">Meals</a>
 			</li>
-			<li>
-				<a href="news.html">News</a>
+			<li class="{{#if (eq currentRoute 'news')}}active{{/if}}">
+				<a href="/news">News</a>
 			</li>
-			<li>
-				<a href="about.html">About</a>
+			<li class="{{#if (eq currentRoute 'about')}}active{{/if}}">
+				<a href="/about">About</a>
 			</li>
-			<li>
-				<a href="contact.html">Contact</a>
+			<li class="{{#if (eq currentRoute 'contact')}}active{{/if}}">
+				<a href="/contact">Contact</a>
 			</li>
 		</ul>
 		<div id="connect">
