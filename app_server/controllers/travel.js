@@ -28,7 +28,8 @@ const travel = async (req, res, next) => {
             }
             res.render('travel', {title: 'Travlr Getaways', trips: json, message});
         })
-        .catch(err => res.status(500).send(e.message));
+        // There was an error in this line so I changed "e." to "err."
+        .catch(err => res.status(500).send(err.message));
     // console.log('TRAVEL CONTROLLER ADTER RENDER');
 };
 
