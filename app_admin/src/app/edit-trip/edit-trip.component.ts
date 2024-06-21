@@ -81,6 +81,22 @@ export class EditTripComponent implements OnInit {
     return `${year}-${month}-${day}`;
   }
 
+  deleteTrip(): void {
+    const tripCode = this.editForm.get('code')?.value;
+    //console.log(`TripEditComponent#deleteTrip calling TripDataService#deleteTrip('${this.tripCode}')`);
+    if (tripCode != null) {
+      this.tripDataService.deleteTrip(tripCode).then((data) => {
+        console.log('TripEditComponent#deleteTrip data', data);
+        this.router.navigate(['']);
+      }).catch((error) => {
+        console.error('TripEditComponent#deleteTrip failed', error);
+      });
+    } else {
+      console.error('TripEditComponent#deleteTrip failed, tripCode is null');
+      this.router.navigate(['']);
+    }
+  }
+
   public onSubmit(): void {
     this.submitted = true;
     if (this.editForm.valid) {
