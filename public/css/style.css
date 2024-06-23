@@ -60,7 +60,7 @@ img {
 	background-position: 0 -118px;
 	background-repeat: no-repeat;
 	height: 49px;
-	width: 122px;
+	width: 106.6px;
 	margin: 0;
 	padding-left: 1px;
 	text-align: center;
@@ -475,7 +475,7 @@ hr {
 }
 #footer ul.navigation {
 	float: left;
-	display: inline-block;
+	/* display: inline-block; */ /* This line is ignored due to float property */
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -507,7 +507,7 @@ hr {
 /** Connect **/
 #connect {
 	float: right;
-	display: inline-block;
+	/* display: inline-block; */ /* This line is ignored due to float property */
 	line-height: 26px;
 	margin: 12px 0 0;
 }

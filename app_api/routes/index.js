@@ -10,6 +10,7 @@ const auth = jwt({
     algorithms: ['HS512']
 });
 
+
 // This is where we import controllers we will route
 const authController = require('../controllers/authentication');
 const tripsController = require('../controllers/trips');
@@ -35,6 +36,7 @@ router
     .route('/trips/:tripCode')
     .get(tripsController.tripsFindByCode)
     .put(auth, tripsController.tripsUpdateTrip)
+    // I added a DELETE Method 
     .delete(auth, tripsController.tripsDeleteTrip);
     
 module.exports = router;

@@ -26,7 +26,7 @@ const travel = async (req, res, next) => {
                     message = 'No trips exist in our database!'
                 }
             }
-            res.render('travel', {title: 'Travlr Getaways', trips: json, message});
+            res.render('travel', {title: 'Travlr Getaways', trips: json, message, currentRoute: 'travel'});
         })
         // There was an error in this line so I changed "e." to "err."
         .catch(err => res.status(500).send(err.message));

@@ -23,6 +23,8 @@ var usersRouter = require('./app_server/routes/users');
 var travelRouter = require('./app_server/routes/travel');
 var aboutRouter = require('./app_server/routes/about');
 var contactRouter = require('./app_server/routes/contact');
+// I added a login button
+const loginRouter = require('./app_server/routes/login');
 var mealsRouter = require('./app_server/routes/meals');
 var newsRouter = require('./app_server/routes/news');
 
@@ -70,6 +72,7 @@ app.use('/users', usersRouter);
 app.use('/travel', travelRouter);
 app.use('/about', aboutRouter)
 app.use('/contact', contactRouter);
+app.use('/login', loginRouter);
 app.use('/meals', mealsRouter);
 app.use('/news', newsRouter);
 app.use('/api', apiRouter); 
