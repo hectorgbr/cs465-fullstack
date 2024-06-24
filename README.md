@@ -1,2 +1,18 @@
 # cs465-fullstack
 CS-465 Full Stack Development with MEAN
+
+# Architecture
+In my full stack project, I utilized various types of frontend development, including Express HTML, JavaScript, and a single-page application (SPA) framework. The Express HTML and JavaScript allowed me to create static content and handle client-side interactions, while the SPA framework (Angular) provided a dynamic and interactive user experience. The SPA approach was particularly beneficial for creating a solid and fluid user experience, as it allowed the entire application to load once, with next interactions only requiring data updates rather than full page reloads.
+For the backend, I chose a NoSQL MongoDB database because it offers flexibility in handling unstructured data, which is ideal for the varied data types that my application manages, such as user profiles, travel packages, and booking information. MongoDB's scalability and ease of use were significant advantages, enabling efficient handling of large amounts of data and providing a smooth integration with the other components of the MEAN stack (MongoDB, Express, Angular, Node.js).
+
+# Functionality
+JSON (JavaScript Object Notation) is a lightweight data interchange format that is easy for both humans to read and write and machines to parse and generate. Unlike JavaScript, which is a programming language, JSON is purely a data format. In my project, JSON played a crucial role in tying together the frontend and backend development. It allows the Angular frontend to communicate effectively with the Node.js/Express backend, facilitating data exchange in a structured format.
+Throughout the development process, I refactored code several times to improve functionality and efficiency. For example, I modularized components of the Travlr Getaways Web Application to make the user interface (UI) more reusable and maintainable. This refactoring made the code cleaner and easier to understand, and it also improved the overall performance of the application by reducing redundancy.
+
+# Testing
+API testing was an integral part of my project to ensure the reliability and security of the application. Methods and endpoints were fully tested to verify correct data handling and response times. Adding security layers, such as authentication and authorization, introduced additional complexities and challenges. However, these were necessary to protect sensitive user data. Testing these security features involved simulating various attack scenarios to ensure robustness against threats such as SQL injection and cross-site scripting (XSS).
+
+I used unit testing for individual components and integration testing to ensure the entire application worked harmoniously. These tests were conducted using tools like Postman for API testing and frameworks like Jasmine and Karma for frontend testing. This comprehensive testing approach ensured that both the customer and administrative sides of the application were secure and functioned as intended.
+
+# Reflection
+This course has been essential in helping me achieve my professional goals. I have developed a range of skills, including proficiency in full stack development, which makes me a more marketable candidate in the tech industry. The hands-on experience with the MEAN stack has been particularly valuable, giving me a practical understanding of modern web development practices. Throughout this course, I have learned to design and implement secure web applications, manage databases, and create dynamic user interfaces. These skills are relevant and highly sought after in today's job market. By completing this project, I feel more confident in my ability to take on complex web development tasks and contribute effectively to any development team.
